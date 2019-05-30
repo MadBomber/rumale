@@ -1,3 +1,8 @@
+# 0.12.0
+## Breaking changes
+- Fix to not continue using the random number generator created in the initialize method. For reproductivity,
+in the training phase, estimators use a copy of the random number generator created in the initialize method.
+
 # 0.11.0
 - Introduce [Parallel gem](https://github.com/grosser/parallel) to improve execution speed for one-vs-the-rest and bagging methods.
 - Add the n_jobs parameter that specifies the number of jobs for parallel processing in some estimators belong to the Rumale::LinearModel, Rumale::PolynomialModel, and Rumale::Ensemble.
